@@ -74,7 +74,7 @@
     const IMAGE_BRANCH = "main";
 
     function getCdnUrl(partition, id) {
-        return `https://cdn.jsdelivr.net/gh/${IMAGE_REPO}@${IMAGE_BRANCH}/images/${partition}/${id}.webp`;
+        return `https://cdn.jsdelivr.net/gh/${IMAGE_REPO}@${IMAGE_BRANCH}/base-images/${partition}/${id}.webp`;
     }
 
 
@@ -1364,15 +1364,15 @@
                     <button id="close-landing-btn" class="landing-modal-close-btn" title="Close (Esc)">&times;</button>
                     <div id="landing-modal-body" class="landing-modal-body">
                         <div class="landing-header">
-                            <h1>💎 Anima Base 1.0 — Style Explorer</h1>
+                            <h1>💎 Anima Turbo 1.0 — Style Explorer</h1>
                         </div>
-                        <blockquote>Two professional benchmarks for Anima Base. 43,000+ unique styles covering 86,400+ Total Generations across Classic & HD editions. Pure Aesthetics. Zero Guesswork.</blockquote>
+                        <blockquote>Dual HD benchmarks for Anima Turbo and Anima Base + Turbo LoRA. 43,000+ unique styles & 86,400+ Total Generations. Pure Aesthetics. Zero Guesswork.</blockquote>
                         <div class="landing-carousel-container">
                             <div class="carousel-frame">
                                 <div class="carousel-images">
                                     <div class="carousel-slide">
                                         <span class="carousel-zoom-btn"></span>
-                                        <img src="images/landing/Anima Base (Turbo) - Style Explorer.png" alt="Anima Base 1.0 - Style Explorer" class="carousel-image" loading="lazy">
+                                        <img src="images/landing/Anima Turbo 1.0 - Style Explorer.webp" alt="Anima Turbo 1.0 - Style Explorer" class="carousel-image" loading="lazy">
                                     </div>
                                 </div>
                             </div>
@@ -1382,14 +1382,14 @@
                                 <div class="carousel-images">
                                     <div class="carousel-slide">
                                         <span class="carousel-zoom-btn"></span>
-                                        <img src="images/landing/Anima Base 1.0 - Style Explorer.png" alt="Anima Base 1.0 - Style Explorer" class="carousel-image" loading="lazy">
+                                        <img src="images/landing/Anima Base (Turbo) - Style Explorer.webp" alt="Anima Base (Turbo) - Style Explorer" class="carousel-image" loading="lazy">
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <hr>
                         <ul class="features-list">
-                        <li><span class="feature-icon">⚡</span><strong>Anima Base - New HD Benchmark:</strong><span>Every style has been generated in <strong>high resolution (832x1216)</strong> using <strong>Anima Base 1.0 + Turbo LoRA</strong>. See exactly how each artist’s DNA interacts with <strong>character, lighting, outfits, and rich environments</strong>. Know in advance how a style performs before you hit generate.</span></li>
+                        <li><span class="feature-icon">🚀</span><strong>Anima Turbo 1.0 - New HD Benchmark:</strong><span>Every style has been generated in <strong>high resolution (832x1216)</strong> using the <strong>Turbo 1.0</strong> model. See how each artist’s DNA interacts with the <strong>character, lighting, and environments</strong>. Know exactly how a style performs before you hit generate.</span></li>
                         </ul>
                         <div class="landing-carousel-container collage-carousel" data-has-arrows="true">
                             <div class="carousel-frame">
@@ -1397,7 +1397,7 @@
                                     ${Array.from({ length: 40 }, (_, i) => `
                                     <div class="carousel-slide">
                                         <span class="carousel-zoom-btn"></span>
-                                        <img src="images/landing/hd/${i + 1}.webp" alt="Collage Example ${i + 1}" class="carousel-image" loading="lazy">
+                                        <img src="images/landing/turbo/${i + 1}.webp" alt="Collage Example ${i + 1}" class="carousel-image" loading="lazy">
                                     </div>
                                     `).join('')}
                                 </div>
@@ -1409,7 +1409,7 @@
                             </div>
                         </div>    
                             <ul class="features-list">
-                        <li><span class="feature-icon">🚀</span><strong>Anima Base - Classic Benchmark:</strong><span>Every style has been generated on a white background to isolate the artist's pure signature. See exactly how each DNA affects <strong>signature drawing techniques, facial anatomy, and unique shading</strong> without any background noise. The ultimate clean reference tool.</span></li>
+                        <li><span class="feature-icon">⚡</span><strong>Anima Base + Turbo LoRA - HD Benchmark:</strong><span>Generated in high resolution using <strong>Anima Base 1.0 + Turbo LoRA 0.2</strong>. This edition highlights <strong>expressive aesthetics and intense detail</strong>, delivering a powerful <strong>"artistic punch"</strong> that brings out a distinct and recognizable identity for every style.</span></li>
                         </ul>
                         <div class="landing-carousel-container collage-carousel" data-has-arrows="true">
                             <div class="carousel-frame">
@@ -1417,7 +1417,7 @@
                                     ${Array.from({ length: 40 }, (_, i) => `
                                     <div class="carousel-slide">
                                         <span class="carousel-zoom-btn"></span>
-                                        <img src="images/landing/classic/${i + 1}.webp" alt="Collage Example ${i + 1}" class="carousel-image" loading="lazy">
+                                        <img src="images/landing/turbo-lora/${i + 1}.webp" alt="Collage Example ${i + 1}" class="carousel-image" loading="lazy">
                                     </div>
                                     `).join('')}
                                 </div>
@@ -1430,16 +1430,17 @@
                         </div>
                         <ul class="features-list">
                         <li><span class="feature-icon">🎯</span><strong>Balanced Quality Modifiers:</strong><span>Generated with <code>masterpiece</code>, <code>best quality</code> for a polished look that <strong>keeps the true artist's DNA</strong>. This ensures your generation results closely match the preview. <strong>Note:</strong> No <code><strong>score_*</strong></code> tags were used to avoid stylistic distortion.</span></li>
-                        <li><span class="feature-icon">🔍</span><strong>Verified Artist Database:</strong><span>Our Danbooru artist list is curated based on the <strong>September 2025 knowledge cut-off</strong>. This ensures high-probability recognition by Anima 1.0 for authentic stylistic influence.</span></li>
-                        <li><span class="feature-icon">🧠</span><strong>Visual DNA Over Volume:</strong><span>Anima 1.0 is already a "master" of anime basics; it only needs <strong>40–60 works</strong> to isolate an artist’s unique signature. Our explorer surfaces <strong>Hidden Gems</strong> where specific artistic deviation is far more powerful than raw data volume.</span></li>
-                        <li><span class="feature-icon">📊</span><strong>Data-Driven Sorting:</strong><span>We processed metadata from <strong>9,113,285</strong> Danbooru images to provide sorting based on actual community engagement. Discover artists by <strong>Avg. Favs</strong> - Average favorites per post or <strong>Avg. Score</strong> - Average community rating per post. <br>Metadata source: <a href="https://huggingface.co/datasets/trojblue/danbooru2025-metadata" target="_blank">Hugging Face</a></span></li>
-                        <li><span class="feature-icon">🌟</span><strong>Uniqueness Rating (v2):</strong><span>Our updated algorithm identifies <strong>hidden gems</strong>, allowing you to find standout styles in seconds.</span></li>
-                        <li><span class="feature-icon">📂</span><strong>Seamless Library Migration:</strong><span>Don’t start from scratch. Easily export your existing styles and import them into Anima 1.0 to watch your collection evolve instantly.</span></li>
-                        <li><span class="feature-icon">💻</span><strong>100% Offline Browser Power:</strong><span>Zero servers, zero lag, total privacy. Run the entire library locally in your <strong>Desktop browser</strong> with a <strong>single click</strong>.</span></li>
+                        <li><span class="feature-icon">🧬</span><strong>Pure Stylistic Integrity:</strong><span>All previews are generated using the <strong>Euler sampler</strong> for maximum stylistic fidelity. Unlike stochastic samplers (like ER_SDE) that inject noise at every step and cause stylistic drift, Euler provides a <strong>faithful and precise output.</strong></span></li>
+                        <li><span class="feature-icon">🔍</span><strong>Verified Artist Database:</strong><span>The <strong>Danbooru/Gelbooru</strong> artist list is curated based on the <strong>September 2025 knowledge cut-off</strong>. This ensures high-probability recognition by Anima for authentic stylistic influence.</span></li>
+                        <li><span class="feature-icon">🧠</span><strong>Visual DNA Over Volume:</strong><span>Anima is a "master" of anime basics, so it only needs <strong>40–60 works</strong> to isolate a unique signature. A distinct artistic deviation in a small set is far more powerful than 500 works of "standard" anime that offer nothing new to capture.</span></li>
+                        <li><span class="feature-icon">📊</span><strong>Data-Driven Sorting:</strong><span>Sorting is powered by processed metadata from <strong>9,113,285</strong> Danbooru images to reflect actual community engagement. Discover artists by <strong>Avg. Favs</strong> - Average favorites per post or <strong>Avg. Score</strong> - Average community rating per post. <br>Metadata source: <a href="https://huggingface.co/datasets/trojblue/danbooru2025-metadata" target="_blank">Hugging Face</a></span></li>
+                        <li><span class="feature-icon">🌟</span><strong>Uniqueness Rating (v2):</strong><span>An updated algorithm identifies <strong>hidden gems</strong>, allowing you to find standout styles in seconds.</span></li>
+                        <li><span class="feature-icon">📂</span><strong>Seamless Library Migration:</strong><span>Don’t start from scratch. <strong>Easily export</strong> your existing styles and <strong>import</strong> them into the Anima Style Explorers to see your collection evolve instantly.</span></li>
+                        <li><span class="feature-icon">💻</span><strong>100% Offline Browser Power:</strong><span>Zero servers, zero lag, total privacy. Run the entire library locally in your <strong>desktop browser</strong> with a <strong>single click</strong>.</span></li>
                         <li><span class="feature-icon">📦</span><strong>Instant One-Click Delivery:</strong><span>Immediate access via high-speed Mega/G-Drive mirrors.</span></li>
                         </ul>
                         <hr>
-                        <div class="pricing-section"><h3>🐣 Early Bird Special</h3><p class="price"><span class="old-price">$24.99</span> $9.99</p><a href="https://app.lava.top/products/e2acf6ae-be97-4309-ad56-9d572fe80c51/ecc8b35a-b33f-43eb-9293-4c321e0b0fd1?currency=USD" class="cta-button" target="_blank">🔥 GET ACCESS NOW</a><p class="fine-print">One-Time Payment. No Subscriptions. Lifetime access.</p></div>
+                        <div class="pricing-section"><h3>🐣 Early Bird Special</h3><p class="price"><span class="old-price">$24.99</span> $9.99</p><a href="https://app.lava.top/products/c6e0977c-6eb3-4635-858d-03a6be00a15a/643ab822-be48-4bda-97ca-457035eb0471?currency=USD" class="cta-button" target="_blank">🔥 GET ACCESS NOW</a><p class="fine-print">One-Time Payment. No Subscriptions. Lifetime access.</p></div>
                     </div>
                 </div>
             </div>`;
@@ -1674,8 +1675,8 @@
                     <button id="promo-modal-close-btn" class="promo-modal-close-btn" title="Close">&times;</button>
                     <div class="promo-modal-body">
                         <div class="promo-header">
-                            <h1>💎 Anima Base 1.0 — Style Explorer</h1>
-                            <p>The ultimate dual benchmark with 43,000+ styles and 86,400+ images. Pure Aesthetics. Zero Guesswork.</p>
+                            <h1>💎Anima Turbo 1.0 — Style Explorer</h1>
+                            <p>Dual HD Benchmarks: 43,000+ Styles & 86,400+ Previews. Pure Aesthetics. Zero Guesswork.</p>
                         </div>
                         <div class="landing-carousel-container">
                             <div class="carousel-frame">
@@ -1688,9 +1689,9 @@
                             </div>
                         </div>
                         <ul class="promo-features-list">
-                            <li><span class="promo-feature-icon">⚡</span><strong>Double Benchmark Expansion</strong>Explore 43,000+ unique styles across two separate editions: New HD (832x1216) and Classic benchmarks.</li>
+                            <li><span class="promo-feature-icon">⚡</span><strong>Double Benchmark Expansion</strong>Explore 43,000+ unique styles across dual benchmarks: Anima Turbo 1.0 and Anima Base 1.0 + Turbo LoRA.</li>
                             <li><span class="promo-feature-icon">🔄</span><strong>Seamless Library Migration</strong>Keep your library. Quickly import your existing styles and folders directly into the new interface.</li>
-                            <li><span class="promo-feature-icon">🌟</span><strong>Uniqueness Rating (v2)</strong>Our updated algorithm identifies "hidden gems" and standout styles in seconds.</li>
+                            <li><span class="promo-feature-icon">🌟</span><strong>Uniqueness Rating (v2)</strong>An updated algorithm identifies "hidden gems" and standout styles in seconds.</li>
                             <li><span class="promo-feature-icon">💻</span><strong>100% Offline Performance</strong>Zero servers, zero lag. Run the entire library locally with total privacy and instant response.</li>
                         </ul>
                         <a href="#" id="promo-cta-btn" class="promo-cta-button">💎 EXPLORE ALL FEATURES</a>

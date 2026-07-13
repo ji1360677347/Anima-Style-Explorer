@@ -1618,7 +1618,7 @@ input[type="range"]::-webkit-slider-thumb {
     background-color: var(--card-background);
     border: 1px solid rgba(255, 255, 255, 0.08);
     border-radius: calc(var(--global-border-radius) + 6px);
-    max-width: 600px;
+    max-width: 860px;
     width: 100%;
     max-height: calc(100vh - 40px); /* Ограничиваем высоту, чтобы окно не выходило за пределы экрана */
     position: relative;
